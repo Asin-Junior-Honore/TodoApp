@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.todo-wrapper {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-wrapper::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  background-image: url("/src/Assets/todo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  padding-top: 6.5rem;
+}
+
+.todo-form {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 50%;
+  padding-top: 20px;
+}
+
+.todo-form .todo-input {
+  width: 100%;
+  padding: 1em;
+  font-size: 15px;
+  outline: 0;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.todo-form .todo-btn {
+  width: 85px;
+  height: 50px;
+  font-size: 22px;
+  background: black;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.4s linear;
+}
+
+
+.Todo {
+  /* border: 1px solid red; */
+  display: flex;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background: black;
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.Todo p {
+  width: 100%;
+  padding: 1em;
+  font-size: 15px;
+  outline: 0;
+  border: none;
+  border-bottom-left-radius: 10px;
+  color: white;
+  border-top-left-radius: 10px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
+  height: 50px;
+  font-size: 25px;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.4s linear;
+  padding-right: 10px;
+}
+.completed {
+  text-decoration: line-through;
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .todo-form {
+    width: 80%;
+  }
+  .Todo {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .todo-form {
+    width: 80%;
+  }
+  
+}
+
