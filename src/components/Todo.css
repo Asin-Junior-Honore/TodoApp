@@ -12,21 +12,6 @@
   align-items: center;
 }
 
-.todo-wrapper::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  background-image: url("/src/Assets/todo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -5;
-  padding-top: 6.5rem;
-}
-
 .todo-form {
   display: flex;
   align-items: stretch;
@@ -57,7 +42,6 @@
   border-bottom-right-radius: 10px;
   transition: all 0.4s linear;
 }
-
 
 .Todo {
   /* border: 1px solid red; */
@@ -117,19 +101,18 @@
   .todo-form {
     width: 80%;
   }
-  
 }
 
 @keyframes animate {
-  0%{
-      transform: translateY(0) rotate(0deg);
-      opacity: 1;
-      border-radius: 0;
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
   }
-  100%{
-      transform: translateY(-1000px) rotate(720deg);
-      opacity: 0;
-      border-radius: 50%;
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
   }
 }
 
@@ -154,9 +137,6 @@
   background: rgba(255, 255, 255, 0.2);
   animation: animate 23s linear infinite;
 }
-
-
-
 
 .background li:nth-child(0) {
   left: 64%;
@@ -298,4 +278,3 @@
   bottom: -144px;
   animation-delay: 23s;
 }
-
